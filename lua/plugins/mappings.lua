@@ -15,21 +15,21 @@ return {
             function() require("neotest").run.run(vim.fn.getcwd()) end,
             desc = "Test all files from workspace",
           },
-          ["<Leader>Tf"] = {
+          ["<Leader>TF"] = {
             function() require("neotest").run.run(vim.fn.expand "%") end,
             desc = "Test current file",
           },
-          ["<Leader>Th"] = {
+          ["<Leader>Tf"] = {
             function() require("neotest").run.run() end,
-            desc = "Test current method/function",
+            desc = "Test current function/method",
           },
           ["<Leader>TS"] = {
-            function() require("neotest").summary.toggle() end,
-            desc = "Toggle test summary",
-          },
-          ["<Leader>Ts"] = {
             function() require("neotest").run.stop() end,
             desc = "Stop current test",
+          },
+          ["<Leader>Ts"] = {
+            function() require("neotest").summary.toggle() end,
+            desc = "Toggle test summary",
           },
           ["<Leader>TW"] = {
             function() require("neotest").watch.toggle(vim.fn.getcwd()) end,
