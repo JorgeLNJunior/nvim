@@ -44,7 +44,6 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       htmx = { filetypes = { "html", "templ" } },
-      -- gopls = { filetypes = { "go", "templ" } },
       html = { filetypes = { "html", "templ" } },
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
