@@ -9,5 +9,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.recipes.vscode-icons" },
   { import = "astrocommunity.search.nvim-spectre" },
+  { import = "astrocommunity.test.neotest" },
   -- import/override with your plugins folder
 }
