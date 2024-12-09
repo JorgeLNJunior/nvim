@@ -45,6 +45,27 @@ return {
     config = {
       htmx = { filetypes = { "html", "templ" } },
       html = { filetypes = { "html", "templ" } },
+      volar = { filetypes = { "typescript", "javascript", "vue" } },
+      ts_ls = {
+        init_options = {
+          plugins = {
+            {
+              name = "@vue/typescript-plugin",
+              location = "/usr/local/lib/node_modules/@vue/typescript-plugin",
+              languages = { "javascript", "typescript", "vue" },
+            },
+          },
+        },
+        filetypes = {
+          "javascript",
+          "javascriptreact",
+          "javascript.jsx",
+          "typescript",
+          "typescriptreact",
+          "typescript.tsx",
+          "vue",
+        },
+      },
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
     -- customize how language servers are attached
