@@ -45,7 +45,6 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      html = { filetypes = { "html", "templ" } },
       ts_ls = {
         init_options = {
           plugins = {
